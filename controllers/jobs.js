@@ -34,7 +34,7 @@ const updateJob = async (req, res) => {
     { new: true, runValidators: true }
   );
   if (!job) {
-    throw new NotFoundError(`No job with id ${userId}`);
+    throw new NotFoundError(`No jo with id ${userId}`);
   }
   res.status(StatusCodes.OK).json({ job });
 };
